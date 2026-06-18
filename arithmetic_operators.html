@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>helllo</h1>
+    <button onclick="increment()">increment</button><br>
+    <button onclick="decrement()">decrement</button>
+    <p id="p1">1</p>
+    <script>
+        // arithmetic operators
+        // +
+        // -
+        // /
+        // *
+        // %
+        // **
+        // ++ increment
+        // -- decrement
+
+        // let a =10
+        // a--
+        // console.log(a)
+        let p = 1
+        function increment(){
+            p++ 
+            console.log(p)
+            document.getElementById("p1").innerHTML =p
+
+        }
+        function decrement(){
+            p--
+            document.getElementById("p1").innerHTML=p
+        }
+        
+        
+    </script>
+</body>
+</html>

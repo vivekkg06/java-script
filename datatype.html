@@ -7,13 +7,34 @@
 </head>
 <body>
     <h1>helllo</h1>
+
+    <div id="d1"></div>
+    <input type="text" id="i1"><br>
+    <input type="text" id="i2">
+    
+    <button onclick="demo()">click</button>
+    <p id="ptag1"></p>
     
 
-
-
     <script>
-        let num = -16
-        console.log(num,typeof(num))
-    </script>
+        // let num = -16
+        // console.log(num,typeof(num))
+
+        // let s = `hello`
+        // let z = "malayalam"
+        // console.log(`my language is ${z}`)
+        // document.getElementById("i1").value = s
+        
+        function demo(){
+            let v= document.getElementById("i1").value
+            document.getElementById("ptag1").innerHTML = v
+            let x=document.getElementById("i2").value
+            document.getElementById("ptag1").innerHTML=v+x
+            
+        }
+        
+
+        
+    </script>  
 </body>
 </html>
