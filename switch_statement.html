@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello</h1>
+    <select name="grade" id="i1" onchange="mark()">
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="a">a</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="F">F</option>
+
+
+    </select>
+    <p id="ptag"></p>
+    <script>
+        // let grade = "C";
+        // switch(grade){
+        //     case "A":
+        //         console.log("your mark between 90 to 100");
+        //         break;
+        //     case "B":
+        //         console.log("your mark between 80 to 90");
+        //         break;
+        //     case "C":
+        //         console.log("your mark between 70 to 80")
+        //         break;
+        //     case "D":
+        //         console.log("your mark between 60 to 70")
+        //         break;
+        //     default:
+        //     console.log("your mark under 60")
+        //         break;   
+
+        // }
+        function mark() {
+            let mark=document.getElementById("i1").value
+            
+            switch (mark) {
+                case "A":
+                case "a":
+                    document.getElementById("ptag").innerHTML="your mark between 90 to 100"
+                    break;
+            
+                case "B":
+                    document.getElementById("ptag").innerHTML="your mark between 80 to 90"
+                    break;
+                case "C":
+                    document.getElementById("ptag").innerHTML="your mark between 70 to 80"
+                    break;
+                case "D":
+                    document.getElementById("ptag").innerHTML="your mark between 60 to 70"
+                    break;
+                default:
+                    document.getElementById("ptag").innerHTML="your mark under 60"
+            }
+            
+        }
+       
+    </script>
+    
+</body>
+</html>

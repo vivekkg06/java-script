@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello</h1>
+    <input type="text"id="i1">
+    <button onclick="checkage()">click</button>
+    <p id="ptag"></p>
+
+    <input type="text"id="i2">
+    <button onclick="checkgrade()">check grade</button>
+    <p id="ptag1"></p>
+    <script>
+        // let age = 16
+
+        // if(age>18){
+
+        //     console.log("you are eligble for vote")
+        // }
+        // else{
+        //     console.log("you are not eligble for vote")
+        // }
+
+
+        // function checkage(){
+        //     let age = document.getElementById("i1").value
+            
+        //     if (age>=18){
+                
+        //         document.getElementById("ptag").innerHTML="you are eligible for vote"
+        //     }
+        //     else{
+        //         document.getElementById("ptag").innerHTML="you are not eligible for vote"
+        //     }
+
+        // }
+
+
+        // let mark = 75
+        // if(mark>90){
+        //     console.log("your grade is : A")
+        // }
+        // else if(mark>80){
+        //     console.log("your grade is : B")
+        // }
+        // else if(mark>70){
+        //     console.log("your grade is : c")
+        // }
+        // else{
+        //     console.log("you are failed")
+        // }
+
+
+        function checkgrade(){
+            let mark= document.getElementById("i2").value
+            if(mark>=90){
+            document.getElementById("ptag1").innerHTML="your grade is : A" 
+            }
+            else if(mark>=80){
+                document.getElementById("ptag1").innerHTML="your grade is : B"
+            }
+            else if(mark>=70){
+                document.getElementById("ptag1").innerHTML="your grade is : C"
+            }
+            else if (mark>=60){
+                document.getElementById("ptag1").innerHTML="your grade is : D"
+            }
+            else{
+                document.getElementById("ptag1").innerHTML="you are failed"
+            }
+
+
+        }
+    </script>
+    
+</body>
+</html>

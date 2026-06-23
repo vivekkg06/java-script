@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>hello</h1>
+    <input type="number" id="i1" onchange="multiply()" />
+    <div id="ptag"></div>
+    
+    <script>
+      // for loop:-
+
+      // let num= 6
+      // for(let i=1;i<=10;i++){
+      //     console.log(`${i}x${num}=${i*num}`)
+      // }
+
+      // function multiply() {
+      //     let num=document.getElementById("i1").value
+      //     document.getElementById("ptag").innerHTML =""
+      //     for(let i=1;i<=10;i++){
+      //         document.getElementById("ptag").innerHTML +=`<p>${i}x${num}=${i*num}</p>`
+      //     }
+
+      // while loop:-
+
+      // }
+      // let x = 1
+      // while(x<=10){
+      //     console.log(x)
+      //     x++
+      // }
+
+      function multiply() {
+          let num=document.getElementById("i1").value
+          document.getElementById("ptag").innerHTML=""
+          let i=1
+          let limit = 10
+          do{
+              document.getElementById("ptag").innerHTML += `<p>${i}x${num}=${i*num}</p>`
+              i++
+
+          }while(i<=limit)
+
+      }
+    </script>
+  </body>
+</html>
