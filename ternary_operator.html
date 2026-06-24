@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hfhfh</h1>
+    <input type="text"id="i1">
+    <button onclick="mark()">click</button>
+    <p id="ptag"></p>
+    <script>
+        // let mark = 40;
+        // let t = mark>50 ? "you are pass":"you are fail";
+        // console.log(t);
+
+        function mark(){
+            let mark=document.getElementById("i1").value
+            let t=mark>50 ? "you are pass" : "you are fail"
+            document.getElementById("ptag").innerHTML=t
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 700px;
+        }
+    </style>
+</head>
+<body id="b">
+    <h1>hello</h1>
+    <button style="background-color: red;" onclick="changecolor('red')">1</button>
+    <button style="background-color: blue;" onclick="changecolor('blue')">2</button>
+    <button style="background-color: yellow;" onclick="changecolor('yellow')">3</button>
+    <button style="background-color: green;" onclick="changecolor('green')">4</button><br>
+
+    
+    <input type="text" placeholder="name" id="name"><br>
+    <input type="text" placeholder="age" id="age"><br>
+    <input type="text" placeholder="place" id="place">
+    
+
+    <button onclick="data()">submit</button>
+    
+    <table border="1" id="d1">
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>place</th>
+        </tr>
+        
+
+    </table>
+
+    <script>
+
+        // function demo(a,b){
+        //     return a+b
+        // }
+
+        // let x = demo(20,20)
+        // let y = demo(30,20)
+
+        // console.log(x)
+
+        // function changecolor(x){
+        //     document.getElementById("b").style.backgroundColor = x
+        // }
+
+        function data(){
+
+           let a= document.getElementById("name").value
+            let b=document.getElementById("age").value
+            let c=document.getElementById("place").value
+            document.getElementById("d1").innerHTML +=`<tr>
+            <td>${a}</td>
+            <td>${b}</td>
+            <td>${c}</td>
+        </tr>`
+
+        }
+
+        
+        
+    </script>
+    
+</body>
+</html>
