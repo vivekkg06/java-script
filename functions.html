@@ -20,16 +20,22 @@
     
     <input type="text" placeholder="name" id="name"><br>
     <input type="text" placeholder="age" id="age"><br>
-    <input type="text" placeholder="place" id="place">
+    <input type="text" placeholder="place" id="place"><br>
+    <select name="gender" id="gender">
+        <option value="male">male</option>
+        <option value="female">female</option>
+    </select>
+    <button onclick="data()">submit</button>
+    
     
 
-    <button onclick="data()">submit</button>
     
     <table border="1" id="d1">
         <tr>
             <th>name</th>
             <th>age</th>
             <th>place</th>
+            <th>gender</th>
         </tr>
         
 
@@ -55,10 +61,16 @@
            let a= document.getElementById("name").value
             let b=document.getElementById("age").value
             let c=document.getElementById("place").value
+            let d=document.getElementById("gender").value
+            
+           
             document.getElementById("d1").innerHTML +=`<tr>
             <td>${a}</td>
             <td>${b}</td>
             <td>${c}</td>
+            <td>${d}</td>
+            
+            
         </tr>`
 
         }
