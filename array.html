@@ -6,6 +6,14 @@
     <title>Document</title>
 </head>
 <body>
+    <div>
+        <!-- <ul id="ul1">
+            
+        </ul> -->
+        <ol id="ol1">
+
+        </ol>
+    </div>
     <script>
         let a = ['apple','banana','grapes','melon','pineapple']
         // console.log(a)
@@ -26,13 +34,17 @@
         // console.log(b)
 
         // object method
-
-    
-
-
-
-
-
+        
+        // for (let k = 0; k < a.length; k++) {
+        //     console.log( a[k])
+            
+        // }
+      
+        for (let k = 0; k < a.length; k++) {
+            
+            document.getElementById("ol1").innerHTML += `<li>${a[k]}</li>`
+        }
+        
 
     </script>
 </body>
