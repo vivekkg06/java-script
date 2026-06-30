@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="body">
+    
+    
+    <style >
+        #d1{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+        #d1:hover{
+            box-shadow: 10px 10px 30px 0px;
+        }
+        .d2{
+            height: 150px;
+            width: 150px;
+            background-color: orange;
+            transition: all 2s;
+        }
+        
+        .d3{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            transition: all 2s;
+        }
+        .d2sub{
+            width: 500px;
+        }
+        .body{
+            background-color: black;
+        }
+
+    </style>
+        <div id="d1"></div>
+        <button id="btn1">click</button>
+        <div id="d2" class="d2" ></div>
+        <button id="btn2">click</button>
+        <div id="d3" class=" d3"></div>
+        <button id="dark" >dark</button>
+        <div class="body"></div>
+
+        <script>
+
+
+            document.getElementById("d1").addEventListener("click",()=>{
+                document.getElementById("d1").style.backgroundColor = "green"
+            })
+
+            document.getElementById("d1").addEventListener("dblclick",()=>{
+                document.getElementById("d1").style.backgroundColor = "yellow"
+            })
+
+            document.getElementById("d1").addEventListener("mouseover",()=>{
+                document.getElementById("d1").style.backgroundColor = "blue"
+            })
+            
+            document.getElementById("d1").addEventListener("mouseleave",()=>{
+                document.getElementById("d1").style.backgroundColor = "black"
+            })
+
+        document.getElementById("btn1").addEventListener("click",()=>{
+                document.getElementById("d2").style.width="500px"
+        })
+
+        document.getElementById("btn1").addEventListener("dblclick",()=>{
+                document.getElementById("d2").style.width="150px"
+            })
+
+        document.getElementById("btn2").addEventListener("click",()=>{
+            document.getElementById("d3").classList.toggle("d2sub")
+        })
+        document.getElementById("dark").addEventListener("click",()=>{
+            document.getElementById("body").classList.toggle("body")
+        })
+            
+        </script>
+        </body>
+</html>
