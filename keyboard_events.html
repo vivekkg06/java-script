@@ -5,16 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <h1 id="h1tag">keyboard  evnents</h1>
+<style>
+    html{
+        cursor: none;
+    }
+    .dc1{
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        cursor: none;
+        border-radius: 50%;
+        
+        background-repeat: no-repeat;
+        
+    }
+    #d2{
+        cursor: none;
+        height: 20px;
+        position: absolute;
 
+    }
+</style>
+<body>
+    <h1 id="h1tag">keyboard  events</h1>
+    <div id="d1" class="dc1"></div>
+   
+    <img src="image/animated point.gif" id="d2" alt="">
     <script>
-        document.addEventListener("keypress",(e)=>{
+        let ml =0
+        let mb=0
+        
+        document.addEventListener("keyup",(e)=>{
             console.log(e.key)
             if(e.key === 'f'){
                 document.getElementById("h1tag").style.color="red"
             }
+            if(e.key==="m"){
+                document.getElementById("d1").classList.remove("dc1")
+        }})
+
+
+        document.addEventListener("keydown",(e)=>{
+            console.log(e.key)
+
+            if(e.key === "ArrowRight"){
+                ml +=10
+                document.getElementById("d1").style.marginLeft = ml+"px"
+
+            }
+            else if(e.key==="ArrowLeft"){
+                ml-=10
+                document.getElementById("d1").style.marginLeft= ml+"px"
+            }
+            else if(e.key==="ArrowDown"){
+                mb+=10
+                document.getElementById("d1").style.marginTop= mb+"px"
+            }
+            else if(e.key==="ArrowUp"){
+                mb-=10
+                document.getElementById("d1").style.marginTop=mb+"px"
+            }
         })
+        let mousel = 0
+        let mouset = 0
+        document.addEventListener("mousemove",(e)=>{
+            mousel = e.clientX
+            mouset = e.clientY
+            document.getElementById("d2").style.marginLeft= (mousel-50)+"px"
+            document.getElementById("d2").style.marginTop= (mouset-220)+"px"
+            
+
+        })
+    
+
+
     </script>
     
 </body>

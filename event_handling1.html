@@ -27,22 +27,27 @@
     </div>
     <script>
         let z= document.getElementById("b2").value
+
         document.getElementById("in1").addEventListener("input",()=>{
             let a = document.getElementById("in1").value;
         document.getElementById("p1").innerHTML = "my name is "+a
         })
+
         document.getElementById("in2").addEventListener("input",()=>{
             let b= document.getElementById("in2").value
             document.getElementById("div1").style.backgroundColor = b
         })
+
         document.getElementById("h1").addEventListener("input",()=>{
             let c= document.getElementById("h1").value
             document.getElementById("div1").style.height=c+"px"
          })
+
         document.getElementById("w1").addEventListener("input",()=>{
             let c= document.getElementById("w1").value
             document.getElementById("div1").style.width=c+"px"
          })
+
         document.getElementById("b1").addEventListener("input",()=>{
             let border_width= document.getElementById("b1").value
             let border_color= document.getElementById("b2").value
